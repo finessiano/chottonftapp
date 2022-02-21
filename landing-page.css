@@ -239,6 +239,7 @@
   margin-bottom: var(--dl-space-space-doubleunit);
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 .landing-page-container1 {
   width: 300px;
