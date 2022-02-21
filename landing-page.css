@@ -8,6 +8,7 @@
   transition: 0.3s;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #ffffff;
+  border-width: 1px;
   padding-left: var(--dl-space-space-doubleunit);
   border-radius: 50px;
   padding-right: var(--dl-space-space-doubleunit);
