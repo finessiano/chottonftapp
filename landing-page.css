@@ -4,8 +4,6 @@
 }
 .solid-button-button {
   color: var(--dl-color-gray-white);
-  width: 125%;
-  height: 50%;
   align-self: center;
   transition: 0.3s;
   padding-top: var(--dl-space-space-halfunit);
