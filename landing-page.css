@@ -267,6 +267,7 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .landing-page-container2-state2 {
   width: 100%;
@@ -301,6 +302,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .landing-page-image1 {
   width: 100%;
@@ -321,6 +323,7 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .landing-page-text13 {
   color: #ffffff;
@@ -347,6 +350,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .landing-page-image2 {
   width: 100%;
@@ -367,6 +371,7 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .landing-page-text20 {
   color: #ffffff;
