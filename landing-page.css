@@ -311,7 +311,11 @@
   background-color: #ffffff;
 }
 .text1-state2 {
-  font-size: 12px;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  padding-bottom: var(--dl-space-space-halfunit);
 }
 .text2-state2 {
   font-size: 12px;
