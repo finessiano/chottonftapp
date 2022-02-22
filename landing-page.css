@@ -1,6 +1,9 @@
 .solid-button-container {
   display: flex;
   position: relative;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .solid-button-button {
   color: var(--dl-color-gray-white);
