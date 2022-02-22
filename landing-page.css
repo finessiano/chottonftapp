@@ -23,6 +23,8 @@
   transform: translateY(-3.5);
   border-color: #370511;
   background-color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .rootClassName {
   align-self: center;
