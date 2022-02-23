@@ -219,6 +219,8 @@ window.addEventListener("load", async () => {
       mmEnable.innerHTML = ethereum.selectedAddress;
 })
 
+const mmEnable = document.getElementById('mm-connect');
+
 mmEnable.onclick = async () => {
   await ethereum.request({ method: 'eth_requestAccounts'})
   mmEnable.innerHTML = ethereum.selectedAddress
