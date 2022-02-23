@@ -59,12 +59,15 @@
 }
 .rootClassName {
   height: 50px;
+  align-self: center;
 }
 .rootClassName1 {
   height: 50px;
+  align-self: center;
 }
 .rootClassName2 {
   height: 50px;
+  align-self: center;
 }
 
 .landing-page-container {
