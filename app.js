@@ -301,6 +301,7 @@ mmEnable.onclick = async () => {
   const tx = await rewardProgramContract.methods.redeemReward(0).send({from: ethereum.selectedAddress});
   await tx.wait();
   var reward1remaining = await rewardProgramContract.methods.remainingRaceTicket().call();
+  await reward1remaining.wait();
   displayValue1.innerHTML = "Remaining: " + reward1remaining;
   window.location.reload();
   }
@@ -313,6 +314,7 @@ mmEnable.onclick = async () => {
   const tx = await rewardProgramContract.methods.redeemReward(1).send({from: ethereum.selectedAddress});
   await tx.wait();
   var reward2remaining = await rewardProgramContract.methods.remainingVinyardTour().call();
+  await reward2remaining.wait();	  
   displayValue2.innerHTML = "Remaining: " + reward2remaining;
   window.location.reload();
   }
@@ -325,6 +327,7 @@ mmEnable.onclick = async () => {
   const tx = await rewardProgramContract.methods.redeemReward(2).send({from: ethereum.selectedAddress});
   await tx.wait();
   var reward3remaining = await rewardProgramContract.methods.remainingRolex().call();
+  await reward3remaining.wait();
   displayValue3.innerHTML = "Remaining: " + reward3remaining;
   window.location.reload();
   }
