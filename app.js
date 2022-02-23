@@ -203,8 +203,9 @@ window.addEventListener("load", async () => {
       if (window.ethereum) {
         const web3 = new Web3(window.ethereum);
         await ethereum.request({ method: 'eth_requestAccounts'});
-	const displayAddress = document.getElementById('mm-connect');     
-        displayAddress.innerHTML = ethereum.selectedAddress;
+	const displayAddress = document.getElementById('mm-connect');  
+	      
+        displayAddress.innerHTML = (ethereum.selectedAddress).substring(0,4);
 	      
 	const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
         rewardProgramContract.setProvider(window.ethereum);
