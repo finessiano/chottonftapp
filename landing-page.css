@@ -99,6 +99,8 @@
 .connect-container {
   display: flex;
   position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .connect-button {
   color: var(--dl-color-gray-white);
@@ -115,6 +117,8 @@
   border-color: #c1c1c1;
   border-style: solid;
   border-width: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .connect-button:hover {
   color: #370511;
@@ -123,6 +127,8 @@
   border-style: solid;
   border-width: 1px;
   background-color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .landing-page-link {
   display: contents;
