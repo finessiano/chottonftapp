@@ -205,10 +205,8 @@ window.addEventListener("load", async () => {
         await ethereum.request({ method: 'eth_requestAccounts'});
 	const displayAddress = document.getElementById('mm-connect');     
         displayAddress.innerHTML = ethereum.selectedAddress;
-	window.location.reload();
       } else {
-        console.log('window.ethereum is not found');
-	window.location.reload();      
+        console.log('window.ethereum is not found');   
       }
 })
 
@@ -220,6 +218,5 @@ mmEnable.onclick = async () => {
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
   rewardProgramContract.setProvider(window.ethereum);	
-  window.location.reload();
 }
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
