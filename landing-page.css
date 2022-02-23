@@ -51,13 +51,11 @@
   padding-right: var(--dl-space-space-doubleunit);
   padding-bottom: var(--dl-space-space-unit);
   background-color: rgba(0, 0, 0, 0);
-  width: 125px;
 }
 .outline-button-button:hover {
   color: #000000;
   border-color: #000000;
   background-color: #ffffff;
-  width: 125px;
 }
 .rootClassName {
   width: 125px;
