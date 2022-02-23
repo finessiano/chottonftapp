@@ -272,7 +272,7 @@ mmEnable.onclick = async () => {
   
   else {
   document.getElementById("founder-container-state1").style.display = "inherit";
-  document.getElementById("landing-page-container02-state2").style.display = "block";
+  document.getElementById("landing-page-container02-state2").style.display = "none";
   }
 }
 
