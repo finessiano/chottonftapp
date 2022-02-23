@@ -32,6 +32,7 @@
 }
 .rootClassName {
   align-self: center;
+  width: 200px;
 }
 
 .outline-button-container {
