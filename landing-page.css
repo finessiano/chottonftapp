@@ -4,7 +4,7 @@
 }
 .solid-button-button {
   color: var(--dl-color-gray-white);
-  width: 125%;
+  width: 175px;
   height: 40%;
   align-self: center;
   transition: 0.3s;
