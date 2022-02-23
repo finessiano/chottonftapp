@@ -216,11 +216,10 @@ const mmEnable = document.getElementById('mm-connect');
 
 mmEnable.onclick = async () => {
   await ethereum.request({ method: 'eth_requestAccounts'});
-  mmEnable.innerHTML = ethereum.selectedAddress;
-  window.location.reload();
-
+  mmEnable.innerHTML = ethereum.selectedAddress;  
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
-  rewardProgramContract.setProvider(window.ethereum);
+  rewardProgramContract.setProvider(window.ethereum);	
+  window.location.reload();
 }
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
