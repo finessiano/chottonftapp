@@ -298,7 +298,8 @@ mmEnable.onclick = async () => {
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
   rewardProgramContract.setProvider(window.ethereum);
-  await rewardProgramContract.methods.redeemReward(0).send({from: ethereum.selectedAddress});
+  const tx = await rewardProgramContract.methods.redeemReward(0).send({from: ethereum.selectedAddress});
+  await tx.wait();
   var reward1remaining = await rewardProgramContract.methods.remainingRaceTicket().call();
   displayValue1.innerHTML = "Remaining: " + reward1remaining;
   window.location.reload();
@@ -309,7 +310,8 @@ mmEnable.onclick = async () => {
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
   rewardProgramContract.setProvider(window.ethereum);
-  await rewardProgramContract.methods.redeemReward(1).send({from: ethereum.selectedAddress});
+  const tx = await rewardProgramContract.methods.redeemReward(1).send({from: ethereum.selectedAddress});
+  await tx.wait();
   var reward2remaining = await rewardProgramContract.methods.remainingVinyardTour().call();
   displayValue2.innerHTML = "Remaining: " + reward2remaining;
   window.location.reload();
@@ -320,7 +322,8 @@ mmEnable.onclick = async () => {
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
   rewardProgramContract.setProvider(window.ethereum);
-  await rewardProgramContract.methods.redeemReward(2).send({from: ethereum.selectedAddress});
+  const tx = await rewardProgramContract.methods.redeemReward(2).send({from: ethereum.selectedAddress});
+  await tx.wait();
   var reward3remaining = await rewardProgramContract.methods.remainingRolex().call();
   displayValue3.innerHTML = "Remaining: " + reward3remaining;
   window.location.reload();
