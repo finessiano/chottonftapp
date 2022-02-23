@@ -200,22 +200,14 @@ const rewardProgramABI =
 ]
 
 window.addEventListener("load", async () => {
-
       if (window.ethereum) {
-        const web3 = new Web3(window.ethereum)
-        try {
-          await ethereum.request({ method: 'eth_requestAccounts'})
-          resolve(web3)
-        } catch (error) {
-          reject(error)
-        }
-      }
-      else {
+        const web3 = new Web3(window.ethereum);
+        await ethereum.request({ method: 'eth_requestAccounts'});
+	const displayAddress = document.getElementById('mm-connect');     
+        displayAddress.innerHTML = ethereum.selectedAddress;      
+      } else {
         console.log('window.ethereum is not found')
       }
-
-      const displayAddress = document.getElementById('mm-connect');     
-      displayAddress.innerHTML = ethereum.selectedAddress;
 })
 
 const mmEnable = document.getElementById('mm-connect');
