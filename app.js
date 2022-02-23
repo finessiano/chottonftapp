@@ -204,7 +204,7 @@ window.addEventListener("load", async () => {
       if (window.ethereum) {
         const web3 = new Web3(window.ethereum)
         try {
-          await window.ethereum.enable()
+          await ethereum.request({ method: 'eth_requestAccounts'})
           resolve(web3)
         } catch (error) {
           reject(error)
@@ -214,9 +214,8 @@ window.addEventListener("load", async () => {
         console.log('window.ethereum is not found')
       }
 
-      const mmEnable = document.getElementById('mm-connect');
-      await ethereum.request({ method: 'eth_requestAccounts'});
-      mmEnable.innerHTML = ethereum.selectedAddress;
+      const displayAddress = document.getElementById('mm-connect');     
+      displayAddress.innerHTML = ethereum.selectedAddress;
 })
 
 const mmEnable = document.getElementById('mm-connect');
