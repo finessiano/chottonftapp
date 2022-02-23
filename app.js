@@ -199,27 +199,25 @@ const rewardProgramABI =
 	}
 ]
 
-// Using the 'load' event listener for Javascript to
-// check if window.ethereum is available
+window.addEventListener("load", async () => {
 
-window.addEventListener('load', function() {
-  if (typeof window.ethereum !== 'undefined') {
-    console.log('window.ethereum is enabled')
-    if (window.ethereum.isMetaMask === true) {
-      console.log('MetaMask is active')
-      // add in web3 here
-      var web3 = new Web3(window.ethereum)
-    } else {
-      console.log('MetaMask is not available')
-    }
-    } else {
-      console.log('window.ethereum is not found')
-    }
-  })
+      if (window.ethereum) {
+        const web3 = new Web3(window.ethereum)
+        try {
+          await window.ethereum.enable()
+          resolve(web3)
+        } catch (error) {
+          reject(error)
+        }
+      }
+      else {
+        console.log('window.ethereum is not found')
+      }
 
-var web3 = new Web3(window.ethereum)
-// Grabbing the button object,
-const mmEnable = document.getElementById('mm-connect');
+      const mmEnable = document.getElementById('mm-connect');
+      await ethereum.request({ method: 'eth_requestAccounts'});
+      mmEnable.innerHTML = ethereum.selectedAddress;
+}
 
 mmEnable.onclick = async () => {
   await ethereum.request({ method: 'eth_requestAccounts'})
