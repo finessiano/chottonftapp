@@ -1,6 +1,5 @@
 .solid-button-container {
   position: relative;
-  width: 175px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
