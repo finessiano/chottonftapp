@@ -268,12 +268,15 @@ mmEnable.onclick = async () => {
   if (nftBalance > 0) {
   document.getElementById("founder-container-state1").style.display = "none";
   document.getElementById("landing-page-container2-state2").style.display = "inherit";
+  window.location.reload();
   }
   
   else {
   document.getElementById("founder-container-state1").style.display = "inherit";
   document.getElementById("landing-page-container2-state2").style.display = "none";
+  window.location.reload();
   }
+  window.location.reload();
 }
 
   var web3 = new Web3(window.ethereum);
