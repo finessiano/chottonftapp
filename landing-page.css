@@ -1,6 +1,6 @@
 .solid-button-container {
   position: relative;
-  width: 200px;
+  width: 175px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -17,7 +17,7 @@
   padding-right: var(--dl-space-space-doubleunit);
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: #370511;
-  width: 200px;
+  width: 175px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -26,13 +26,13 @@
   transform: translateY(-3.5);
   border-color: #370511;
   background-color: #ffffff;
-  width: 200px;
+  width: 175px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .rootClassName {
   align-self: center;
-  width: 200px;
+  width: 175px;
 }
 
 .outline-button-container {
