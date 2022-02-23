@@ -268,6 +268,7 @@ mmEnable.onclick = async () => {
   if (nftBalance > 0) {
   document.getElementById("founder-container-state1").style.display = "none";
   document.getElementById("landing-page-container2-state2").style.display = "inherit";
+  document.getElementById("landing-page-container2-state2").style.z-index = "0";
   }
   
   else {
