@@ -210,6 +210,10 @@ window.addEventListener("load", async () => {
       }
 })
 
+window.ethereum.on('accountsChanged', function () {
+  window.location.reload();
+})
+
 const mmEnable = document.getElementById('mm-connect');
 
 mmEnable.onclick = async () => {
