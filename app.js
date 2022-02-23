@@ -208,7 +208,7 @@ window.addEventListener("load", async () => {
 	const activeAddress = ethereum.selectedAddress ;
 	const activeAddressFirstFour = activeAddress.substring(0,4);
 	const activeAddressLastFour = activeAddress.substring(39,42);
-	displayAddress.innerHTML = activeAddressFirstFour + "..." + activeAddressLastFour
+	displayAddress.innerHTML = activeAddressFirstFour + "..." + activeAddressLastFour;
 	      
 	const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
         rewardProgramContract.setProvider(window.ethereum);
@@ -254,7 +254,7 @@ mmEnable.onclick = async () => {
 	const activeAddress = ethereum.selectedAddress;
 	const activeAddressFirstFour = activeAddress.substring(0,4);
 	const activeAddressLastFour = activeAddress.substring(39,42);
-	mmEnable.innerHTML = activeAddressFirstFour + "..." + activeAddressLastFour
+	mmEnable.innerHTML = activeAddressFirstFour + "..." + activeAddressLastFour;
 	
  
   var web3 = new Web3(window.ethereum);
