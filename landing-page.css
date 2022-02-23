@@ -50,6 +50,7 @@
   padding-right: var(--dl-space-space-doubleunit);
   padding-bottom: var(--dl-space-space-unit);
   background-color: rgba(0, 0, 0, 0);
+  width: 125px;
 }
 .outline-button-button:hover {
   color: #000000;
@@ -61,10 +62,11 @@
   height: 50px;
 }
 .rootClassName1 {
-  width: 125px;
   height: 50px;
+  width: 125px;
 }
 .rootClassName2 {
+  width: 125px;
   height: 50px;
 }
 
