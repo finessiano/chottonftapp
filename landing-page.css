@@ -1,5 +1,6 @@
 .solid-button-container {
   position: relative;
+  width: 175px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -56,6 +57,7 @@
   color: #000000;
   border-color: #000000;
   background-color: #ffffff;
+  width: 125px;
 }
 .rootClassName {
   width: 125px;
