@@ -298,10 +298,8 @@ mmEnable.onclick = async () => {
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
   rewardProgramContract.setProvider(window.ethereum);
-  const tx = await rewardProgramContract.methods.redeemReward(0).send({from: ethereum.selectedAddress});
-  await tx.wait();
+  await rewardProgramContract.methods.redeemReward(0).send({from: ethereum.selectedAddress});
   var reward1remaining = await rewardProgramContract.methods.remainingRaceTicket().call();
-  await reward1remaining.wait();
   displayValue1.innerHTML = "Remaining: " + reward1remaining;
   window.location.reload();
   }
@@ -311,10 +309,8 @@ mmEnable.onclick = async () => {
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
   rewardProgramContract.setProvider(window.ethereum);
-  const tx = await rewardProgramContract.methods.redeemReward(1).send({from: ethereum.selectedAddress});
-  await tx.wait();
-  var reward2remaining = await rewardProgramContract.methods.remainingVinyardTour().call();
-  await reward2remaining.wait();	  
+  await rewardProgramContract.methods.redeemReward(1).send({from: ethereum.selectedAddress});
+  var reward2remaining = await rewardProgramContract.methods.remainingVinyardTour().call();	  
   displayValue2.innerHTML = "Remaining: " + reward2remaining;
   window.location.reload();
   }
@@ -324,10 +320,8 @@ mmEnable.onclick = async () => {
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
   rewardProgramContract.setProvider(window.ethereum);
-  const tx = await rewardProgramContract.methods.redeemReward(2).send({from: ethereum.selectedAddress});
-  await tx.wait();
+  await rewardProgramContract.methods.redeemReward(2).send({from: ethereum.selectedAddress});
   var reward3remaining = await rewardProgramContract.methods.remainingRolex().call();
-  await reward3remaining.wait();
   displayValue3.innerHTML = "Remaining: " + reward3remaining;
   window.location.reload();
   }
