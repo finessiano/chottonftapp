@@ -17,7 +17,7 @@
   padding-right: var(--dl-space-space-doubleunit);
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: #370511;
-  width: 175px;
+  width: 125%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
