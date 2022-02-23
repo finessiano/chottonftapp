@@ -1,4 +1,5 @@
 .solid-button-container {
+  display: block;
   position: relative;
 }
 .solid-button-button {
