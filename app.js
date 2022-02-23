@@ -275,4 +275,40 @@ mmEnable.onclick = async () => {
   document.getElementById("landing-page-container02-state2").style.display = "block";
   }
 }
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  var web3 = new Web3(window.ethereum);
+  const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
+  rewardProgramContract.setProvider(window.ethereum);	
+
+  const redeem1 = document.getElementById('redeem-reward1');
+  redeem1.onclick = async () => {
+  var web3 = new Web3(window.ethereum);
+  const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
+  rewardProgramContract.setProvider(window.ethereum);
+  await rewardProgramContract.methods.redeemReward(0).send({from: ethereum.selectedAddress});
+  var reward1remaining = await rewardProgramContract.methods.remainingRaceTicket().call();
+  displayValue1.innerHTML = "Remaining: " + reward1remaining;
+  window.location.reload();
+  }
+  
+  const redeem2 = document.getElementById('redeem-reward2');
+  redeem2.onclick = async () => {
+  var web3 = new Web3(window.ethereum);
+  const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
+  rewardProgramContract.setProvider(window.ethereum);
+  await rewardProgramContract.methods.redeemReward(1).send({from: ethereum.selectedAddress});
+  var reward2remaining = await rewardProgramContract.methods.remainingVinyardTour().call();
+  displayValue2.innerHTML = "Remaining: " + reward2remaining;
+  window.location.reload();
+  }
+  
+  const redeem3 = document.getElementById('redeem-reward3');
+  redeem3.onclick = async () => {
+  var web3 = new Web3(window.ethereum);
+  const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
+  rewardProgramContract.setProvider(window.ethereum);
+  await rewardProgramContract.methods.redeemReward(2).send({from: ethereum.selectedAddress});
+  var reward3remaining = await rewardProgramContract.methods.remainingRolex().call();
+  displayValue3.innerHTML = "Remaining: " + reward3remaining;
+  window.location.reload();
+  }
