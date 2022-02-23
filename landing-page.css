@@ -30,6 +30,7 @@
 }
 .rootClassName {
   align-self: center;
+  width: 175px;
 }
 
 .outline-button-container {
@@ -57,14 +58,17 @@
 .rootClassName {
   height: 50px;
   align-self: center;
+  width: 125px;
 }
 .rootClassName1 {
   height: 50px;
   align-self: center;
+  width: 125px;
 }
 .rootClassName2 {
   height: 50px;
   align-self: center;
+  width: 125px;
 }
 
 .landing-page-container {
