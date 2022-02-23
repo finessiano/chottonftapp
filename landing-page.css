@@ -58,16 +58,16 @@
   background-color: #ffffff;
 }
 .rootClassName {
+  width: 125px;
   height: 50px;
-  align-self: center;
 }
 .rootClassName1 {
   height: 50px;
-  align-self: center;
+  width: 125px;
 }
 .rootClassName2 {
+  width: 125px;
   height: 50px;
-  align-self: center;
 }
 
 .landing-page-container {
