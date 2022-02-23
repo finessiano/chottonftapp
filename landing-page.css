@@ -38,6 +38,7 @@
 .outline-button-container {
   display: flex;
   position: relative;
+  width: 125px;
 }
 .outline-button-button {
   color: #ffffff;
