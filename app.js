@@ -205,7 +205,7 @@ window.addEventListener("load", async () => {
         await ethereum.request({ method: 'eth_requestAccounts'});
 	const displayAddress = document.getElementById('mm-connect');  
 	      
-        displayAddress.innerHTML = (ethereum.selectedAddress).substring(0,4);
+        displayAddress.innerHTML = (ethereum.selectedAddress).substring(0,6);
 	      
 	const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
         rewardProgramContract.setProvider(window.ethereum);
@@ -247,7 +247,9 @@ const mmEnable = document.getElementById('mm-connect');
 
 mmEnable.onclick = async () => {
   await ethereum.request({ method: 'eth_requestAccounts'});
-  mmEnable.innerHTML = ethereum.selectedAddress;  
+	
+  mmEnable.innerHTML = (ethereum.selectedAddress).substring(0,6);
+ 
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
   rewardProgramContract.setProvider(window.ethereum);	
