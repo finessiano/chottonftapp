@@ -1,36 +1,30 @@
 .solid-button-container {
+  display: flex;
   position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .solid-button-button {
   color: var(--dl-color-gray-white);
+  width: 175px;
+  height: 40%;
   align-self: center;
   transition: 0.3s;
   padding-top: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-style: solid;
-  border-width: 1px;
+  border-color: #c1c1c1;
   padding-left: var(--dl-space-space-doubleunit);
   border-radius: 50px;
   padding-right: var(--dl-space-space-doubleunit);
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: #370511;
-  width: 125%;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .solid-button-button:hover {
   color: #370511;
   transform: translateY(-3.5);
   border-color: #370511;
   background-color: #ffffff;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .rootClassName {
-  align-self: center;
   width: 175px;
+  align-self: center;
 }
 
 .outline-button-container {
@@ -56,19 +50,19 @@
   background-color: #ffffff;
 }
 .rootClassName {
+  width: 125px;
   height: 50px;
   align-self: center;
-  width: 125px;
 }
 .rootClassName1 {
+  width: 125px;
   height: 50px;
   align-self: center;
-  width: 125px;
 }
 .rootClassName2 {
+  width: 125px;
   height: 50px;
   align-self: center;
-  width: 125px;
 }
 
 .landing-page-container {
