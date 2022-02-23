@@ -205,6 +205,34 @@ window.addEventListener("load", async () => {
         await ethereum.request({ method: 'eth_requestAccounts'});
 	const displayAddress = document.getElementById('mm-connect');     
         displayAddress.innerHTML = ethereum.selectedAddress;
+	      
+	const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
+        rewardProgramContract.setProvider(window.ethereum);
+	      
+	  var displayValue1 = document.getElementById('display-value1');
+	  var reward1remaining = await rewardProgramContract.methods.remainingRaceTicket().call();
+	  displayValue1.innerHTML = "Remaining: " + reward1remaining;
+
+	  var displayValue2 = document.getElementById('display-value2');
+	  var reward2remaining = await rewardProgramContract.methods.remainingVinyardTour().call();
+	  displayValue2.innerHTML = "Remaining: " + reward2remaining;
+
+	  var displayValue3 = document.getElementById('display-value3');
+	  var reward3remaining = await rewardProgramContract.methods.remainingRolex().call();
+	  displayValue3.innerHTML = "Remaining: " + reward3remaining;
+
+	  var nftBalance = await rewardProgramContract.methods.nftBalanceOf(ethereum.selectedAddress).call();
+
+	  if (nftBalance > 0) {
+	  document.getElementById("founder-container-state1").style.display = "none";
+	  document.getElementById("landing-page-container02-state2").style.display = "block";
+	  }
+
+	  else {
+	  document.getElementById("founder-container-state1").style.display = "inherit";
+	  document.getElementById("landing-page-container02-state2").style.display = "block";
+	  }      
+	      
       } else {
         console.log('window.ethereum is not found');   
       }
@@ -222,5 +250,29 @@ mmEnable.onclick = async () => {
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
   rewardProgramContract.setProvider(window.ethereum);	
+
+  var displayValue1 = document.getElementById('display-value1');
+  var reward1remaining = await rewardProgramContract.methods.remainingRaceTicket().call();
+  displayValue1.innerHTML = "Remaining: " + reward1remaining;
+  
+  var displayValue2 = document.getElementById('display-value2');
+  var reward2remaining = await rewardProgramContract.methods.remainingVinyardTour().call();
+  displayValue2.innerHTML = "Remaining: " + reward2remaining;
+  
+  var displayValue3 = document.getElementById('display-value3');
+  var reward3remaining = await rewardProgramContract.methods.remainingRolex().call();
+  displayValue3.innerHTML = "Remaining: " + reward3remaining;
+  
+  var nftBalance = await rewardProgramContract.methods.nftBalanceOf(ethereum.selectedAddress).call();
+  
+  if (nftBalance > 0) {
+  document.getElementById("founder-container-state1").style.display = "none";
+  document.getElementById("landing-page-container02-state2").style.display = "block";
+  }
+  
+  else {
+  document.getElementById("founder-container-state1").style.display = "inherit";
+  document.getElementById("landing-page-container02-state2").style.display = "block";
+  }
 }
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
