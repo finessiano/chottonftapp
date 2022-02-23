@@ -204,17 +204,20 @@ window.addEventListener("load", async () => {
         const web3 = new Web3(window.ethereum);
         await ethereum.request({ method: 'eth_requestAccounts'});
 	const displayAddress = document.getElementById('mm-connect');     
-        displayAddress.innerHTML = ethereum.selectedAddress;      
+        displayAddress.innerHTML = ethereum.selectedAddress;
+	window.location.reload();
       } else {
-        console.log('window.ethereum is not found')
+        console.log('window.ethereum is not found');
+	window.location.reload();      
       }
 })
 
 const mmEnable = document.getElementById('mm-connect');
 
 mmEnable.onclick = async () => {
-  await ethereum.request({ method: 'eth_requestAccounts'})
-  mmEnable.innerHTML = ethereum.selectedAddress
+  await ethereum.request({ method: 'eth_requestAccounts'});
+  mmEnable.innerHTML = ethereum.selectedAddress;
+  window.location.reload();
 
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
