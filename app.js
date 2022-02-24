@@ -302,7 +302,7 @@ mmEnable.onclick = async () => {
   var reward1remaining = await rewardProgramContract.methods.remainingRaceTicket().call();
   const displayValue1 = document.getElementById('display-value1');
   displayValue1.innerHTML = "Remaining: " + reward1remaining;
-  window.location.reload(true);
+  window.location.reload();
   }
   
   const redeem2 = document.getElementById('redeem-reward2');
@@ -314,7 +314,7 @@ mmEnable.onclick = async () => {
   var reward2remaining = await rewardProgramContract.methods.remainingVinyardTour().call();
   const displayValue2 = document.getElementById('display-value2');
   displayValue2.innerHTML = "Remaining: " + reward2remaining;
-  window.location.reload(true);
+  window.location.reload();
   }
   
   const redeem3 = document.getElementById('redeem-reward3');
@@ -326,5 +326,5 @@ mmEnable.onclick = async () => {
   var reward3remaining = await rewardProgramContract.methods.remainingRolex().call();
   const displayValue3 = document.getElementById('display-value3');
   displayValue3.innerHTML = "Remaining: " + reward3remaining;
-  window.location.reload(true);
+  window.location.reload();
   }
