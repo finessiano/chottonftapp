@@ -287,11 +287,7 @@ mmEnable.onclick = async () => {
   window.location.reload();
   }
   window.location.reload();
-}
-
-  var web3 = new Web3(window.ethereum);
-  const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
-  rewardProgramContract.setProvider(window.ethereum);	
+}	
 
   const redeem1 = document.getElementById('redeem-reward1');
   redeem1.onclick = async () => {
