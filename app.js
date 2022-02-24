@@ -1,5 +1,5 @@
 // contract address on Kovan:
-const rewardProgramAddress = '0x868450975AB185EE54F10fBe6Ea829a386dC9fa4'
+const rewardProgramAddress = '0xBbE7439a34F2c655a358e7B12115BF830185095a'
 
 // add contract ABI:
 const rewardProgramABI =
@@ -60,19 +60,6 @@ const rewardProgramABI =
 		],
 		"name": "NewRedemption",
 		"type": "event"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "enum RewardManager.Reward",
-				"name": "_reward",
-				"type": "uint8"
-			}
-		],
-		"name": "redeemReward",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
 	},
 	{
 		"inputs": [],
@@ -156,6 +143,19 @@ const rewardProgramABI =
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "enum RewardManager.Reward",
+				"name": "_reward",
+				"type": "uint8"
+			}
+		],
+		"name": "redeemReward",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
