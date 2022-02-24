@@ -298,15 +298,11 @@ mmEnable.onclick = async () => {
   var web3 = new Web3(window.ethereum);
   const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
   rewardProgramContract.setProvider(window.ethereum);  
-  const tx = await rewardProgramContract.methods.redeemReward(0).send({from: ethereum.selectedAddress});
+  const tx = await rewardProgramContract.redeemReward(0).send({from: ethereum.selectedAddress});
   const txResult = await tx.wait();
-  if (txResult.status == 1) {
-     var reward1remaining = await rewardProgramContract.methods.remainingRaceTicket().call();
-     displayValue1.innerHTML = "Remaining: " + reward1remaining;
-     window.location.reload(); 
-   } else {
-	console.log("Transaction failed");   
-   }
+  var reward1remaining = await rewardProgramContract.methods.remainingRaceTicket().call();
+  displayValue1.innerHTML = "Remaining: " + reward1remaining;
+  window.location.reload(); 
   }
   
   const redeem2 = document.getElementById('redeem-reward2');
