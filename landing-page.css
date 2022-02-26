@@ -6,7 +6,9 @@
   color: var(--dl-color-gray-white);
   width: 175px;
   height: 40%;
+  font-family: Heebo;
   align-self: center;
+  text-align: center;
   transition: 0.3s;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #c1c1c1;
@@ -21,6 +23,9 @@
   transform: translateY(-3.5);
   border-color: #370511;
   background-color: #ffffff;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 
 .outline-button-container {
@@ -39,26 +44,38 @@
   padding-right: var(--dl-space-space-doubleunit);
   padding-bottom: var(--dl-space-space-unit);
   background-color: rgba(0, 0, 0, 0);
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .outline-button-button:hover {
   color: #000000;
   border-color: #000000;
   background-color: #ffffff;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .rootClassName {
   width: 125px;
   height: 50px;
+  font-family: Heebo;
   align-self: center;
+  text-align: center;
 }
 .rootClassName1 {
   width: 125px;
   height: 50px;
+  font-family: Heebo;
   align-self: center;
+  text-align: center;
 }
 .rootClassName2 {
   width: 125px;
   height: 50px;
+  font-family: Heebo;
   align-self: center;
+  text-align: center;
 }
 
 .landing-page-container {
@@ -106,7 +123,9 @@
   color: var(--dl-color-gray-white);
   width: 175px;
   height: 40%;
+  font-family: Heebo;
   align-self: center;
+  text-align: center;
   transition: 0.3s;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-doubleunit);
@@ -129,6 +148,9 @@
   background-color: #ffffff;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-link {
   display: contents;
@@ -201,15 +223,27 @@
 }
 .landing-page-text {
   margin-bottom: 8px;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-text01 {
   margin-bottom: 8px;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-text02 {
   margin-bottom: 8px;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-link01 {
   display: contents;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-follow-container {
   display: flex;
@@ -219,6 +253,9 @@
 }
 .landing-page-text04 {
   padding-bottom: var(--dl-space-space-halfunit);
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-icons-container {
   width: 100px;
@@ -229,6 +266,9 @@
 }
 .landing-page-link02 {
   display: contents;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-icon05 {
   width: 24px;
@@ -236,6 +276,9 @@
 }
 .landing-page-link03 {
   display: contents;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-icon07 {
   width: 24px;
@@ -264,6 +307,9 @@
 }
 .landing-page-text05 {
   color: #ffffff;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-cards-container {
   width: 100%;
@@ -320,6 +366,9 @@
   font-style: normal;
   font-weight: 700;
   padding-bottom: var(--dl-space-space-halfunit);
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .container1-state2 {
   width: 277px;
@@ -330,6 +379,8 @@
   color: #ffffff;
   width: 275px;
   height: 50px;
+  font-family: Heebo;
+  align-self: center;
   text-align: center;
   transition: 0.3s;
   padding-top: var(--dl-space-space-unit);
@@ -346,6 +397,9 @@
   color: #000000;
   border-color: #000000;
   background-color: #ffffff;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .text1-state2 {
   color: #ffffff;
@@ -353,10 +407,16 @@
   font-style: normal;
   font-weight: 700;
   padding-bottom: var(--dl-space-space-halfunit);
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .text2-state2 {
   font-size: 12px;
   color: #ffffff;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .container2-state2 {
   width: 277px;
@@ -367,6 +427,8 @@
   color: #ffffff;
   width: 275px;
   height: 50px;
+  font-family: Heebo;
+  align-self: center;
   text-align: center;
   transition: 0.3s;
   padding-top: var(--dl-space-space-unit);
@@ -383,13 +445,22 @@
   color: #000000;
   border-color: #000000;
   background-color: #ffffff;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .text3-state2 {
   font-size: 12px;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .text4-state2 {
   font-size: 12px;
   color: #ffffff;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .container3-state2 {
   width: 277px;
@@ -400,6 +471,8 @@
   color: #ffffff;
   width: 275px;
   height: 50px;
+  font-family: Heebo;
+  align-self: center;
   text-align: center;
   transition: 0.3s;
   padding-top: var(--dl-space-space-unit);
@@ -416,13 +489,22 @@
   color: #000000;
   border-color: #000000;
   background-color: #ffffff;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .text5-state2 {
   font-size: 12px;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .text6-state2 {
   color: #ffffff;
   font-size: 12px;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-text06 {
   color: #ffffff;
@@ -430,16 +512,24 @@
   font-style: normal;
   font-weight: 700;
   padding-bottom: var(--dl-space-space-halfunit);
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-text07 {
   color: #ffffff;
   font-size: 12px;
   max-width: 250px;
+  font-family: Heebo;
+  align-self: center;
   text-align: center;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
 .landing-page-link05 {
   display: contents;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-component2 {
   text-decoration: none;
@@ -478,16 +568,24 @@
   font-style: normal;
   font-weight: 700;
   padding-bottom: var(--dl-space-space-halfunit);
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-text14 {
   color: #ffffff;
   font-size: 12px;
   max-width: 250px;
+  font-family: Heebo;
+  align-self: center;
   text-align: center;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
 .landing-page-link06 {
   display: contents;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-component3 {
   text-decoration: none;
@@ -526,16 +624,24 @@
   font-style: normal;
   font-weight: 700;
   padding-bottom: var(--dl-space-space-halfunit);
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-text21 {
   color: #ffffff;
   font-size: 12px;
   max-width: 250px;
+  font-family: Heebo;
+  align-self: center;
   text-align: center;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
 .landing-page-link07 {
   display: contents;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-component4 {
   text-decoration: none;
@@ -557,15 +663,21 @@
   background-color: var(--dl-color-gray-black);
 }
 .landing-page-link08 {
-  align-self: center;
   text-decoration: none;
+  font-family: Heebo;
+  align-self: center;
+  text-align: center;
 }
 .landing-page-link09 {
+  font-family: Heebo;
   align-self: center;
+  text-align: center;
   text-decoration: none;
 }
 .landing-page-link10 {
+  font-family: Heebo;
   align-self: center;
+  text-align: center;
   text-decoration: none;
 }
 @media(max-width: 991px) {
